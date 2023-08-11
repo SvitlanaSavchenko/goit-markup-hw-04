@@ -174,7 +174,7 @@ body {
   padding-bottom: 24px;
   position: relative;
   display: block;
-  transition: color var(--transition-dur-and-func);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,
@@ -199,7 +199,7 @@ body {
   display: inline-block;
   padding-top: 24px;
   padding-bottom: 24px;
-  transition: color var(--transition-dur-and-func);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .adress-link:hover,
@@ -257,9 +257,13 @@ body {
   height: 100%;
   border-radius: 50%;
   background-color: var(--primary-brand-color-iris);
-  transition: background-color var(--transition-dur-and-func);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer-icon-link:hover,
+.footer-icon-link:focus {
+  background-color: var(--success-color-green);
+}
 .footer-icon {
   fill: var(--light-color-cloud);
 }
@@ -313,7 +317,7 @@ body {
   padding: 16px 32px;
   margin: 0 auto;
   min-width: 169px;
-  transition: color var(--transition-dur-and-func);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -419,6 +423,7 @@ body {
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
+
 .team-list-icons {
   display: flex;
   align-items: center;
@@ -440,7 +445,7 @@ body {
   background-color: var(--primary-brand-color-iris);
   border-color: var(--primary-brand-color-iris);
   border-radius: 50%;
-  transition: background-color var(--transition-dur-and-func);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-link-icon:hover,
@@ -512,8 +517,8 @@ body {
   color: var(--subtle-text-color-light-slate);
   border-radius: 4px;
   border: 1px solid var(--subtle-text-color-light-slate);
-  transition: border-color var(--transition-dur-and-func),
-    color var(--transition-dur-and-func);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: currentColor;
 }
 
@@ -557,10 +562,10 @@ body {
   text-align: center;
   border-radius: 4px;
   border: 1px solid var(--accent-color-cornflower);
-  transition: color var(--transition-dur-and-func),
-    background-color var(--transition-dur-and-func),
-    border-color var(--transition-dur-and-func),
-    box-shadow var(--transition-dur-and-func);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-filter:hover,
@@ -585,7 +590,7 @@ body {
 
 .portfolio-link {
   display: block;
-  transition: box-shadow var(--transition-dur-and-func);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-link:hover,
@@ -635,7 +640,7 @@ body {
   color: var(--light-color-cloud);
   background-color: var(--primary-brand-color-iris);
   transform: translateY(100%);
-  transition: transform var(--transition-dur-and-func);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-link:hover .portfolio-overlay-text,
@@ -656,8 +661,8 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
-  transition: opacity var(--transition-dur-and-func),
-    visibility var(--transition-dur-and-func);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -668,9 +673,9 @@ body {
 
 .modal {
   position: absolute;
-  top: 80px;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%) translateY(0%) scale(1);
+  transform: translateX(-50%) translateY(-50%) scale(1);
   width: 408px;
   min-height: 584px;
   border-radius: 4px;
@@ -678,7 +683,7 @@ body {
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
   background-color: var(--modal-background-color-dairy);
   opacity: 1;
-  transition: transform var(--transition-dur-and-func);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button-close {
@@ -694,8 +699,8 @@ body {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--accent-color-cornflower);
-  transition: background-color var(--transition-dur-and-func),
-    border var(--transition-dur-and-func);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button-close:hover,
@@ -707,7 +712,7 @@ body {
 
 .modal-icon-close {
   fill: var(--dark-color-navy-blue);
-  transition: fill var(--transition-dur-and-func);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button-close:hover .modal-icon-close,
